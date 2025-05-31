@@ -1,0 +1,45 @@
+import time 
+import random
+name1 = input("Enter name of Player 1")
+name2 = input("Enter name of Player 2")
+print("Hello {} and {}".format(name1,name2))
+print("compiler generates random nums")
+print("Guess your turn of number with three choices")
+nums=[]
+while(len(nums)!=5):
+    a = random.randint(1,10)
+    if(a in nums):
+       continue
+    else:
+        nums.append(a)
+Player1=[]
+Player2=[]
+s1=0
+s2=0
+for i in range(3):
+    print("{} enter your guess".format(name1))
+    ans=int(input())
+    while(ans in Player1 or ans in Player2):
+        ans=int(input("Already taken choose another number"))
+        
+       
+        if(ans in nums):
+            print("------>CORRECT")
+            s1=s1+1
+        else:
+            print("------>WRONG")
+    print("{} enter your guess".format(name2))
+    ans2=int(input())
+    if(ans2 not in Player1 or ans2 not in Player2):
+        
+        if(ans2 in nums):
+            print("------>CORRECT")
+            s2=s2+1
+        else:
+            print("------>WRONG")
+time.sleep(2)
+print("--------------------------")
+print("Let's have the summary of the Game")
+print("")
+    
+
