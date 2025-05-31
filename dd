@@ -38,7 +38,7 @@ for i in range(3):
         else:
             print("------>WRONG")
 time.sleep(2)
-print("--------------------------")
+print("-------------------------")
 print("Let's have the summary of the Game")
 print("")
     
