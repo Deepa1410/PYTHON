@@ -1,0 +1,18 @@
+def cal(ht,up,down):
+    time=0
+    dis=0
+    i=1
+    while (True):
+        if(dis>=ht):
+            break
+        if(i%2==1):
+            dis=dis+up
+            time=time+1 
+        else:
+            dis=dis-down
+            time=time+1
+        i=i+1 
+    print(time)
+cal(30,10,5)
+cal(21,5,3)
+            
