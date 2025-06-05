@@ -1,0 +1,5 @@
+file = open("DEEPA.xls", "w")
+file.write("Deepa is doing final year engg \n")
+file.write("Now he is in trainingf \n")
+file.close()
+print("Content written to DEEPA.txt successfully.")
