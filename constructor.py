@@ -6,6 +6,6 @@ class Person:
         print("Name:",self.name)
         print("Age",self.age)
         
-person1 = Person("SUMIT",20)
+person1 = Person("DEEPA",20)
 person1.display()
     
